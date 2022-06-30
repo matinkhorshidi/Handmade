@@ -4,14 +4,7 @@ import { Col, Row } from 'antd';
 const TeamContainer = ({ Teams }) => {
   return (
     <Row style={{ paddingTop: '8rem' }}>
-      <Col
-        xs={24}
-        sm={24}
-        md={24}
-        lg={16}
-        xl={16}
-        // style={{ paddingRight: '5rem' }}
-      >
+      <Col xs={24} sm={24} md={24} lg={16} xl={16}>
         <h2 className="Team-text">Team</h2>
         <h2 className="Team-header-text">We are the Handmade Interactive</h2>
         {/* Team */}
@@ -38,14 +31,7 @@ const TeamContainer = ({ Teams }) => {
           })}
         </Row>
       </Col>
-      <Col
-        xs={24}
-        sm={24}
-        md={24}
-        lg={8}
-        xl={8}
-        // style={{ backgroundColor: 'blue' }}
-      >
+      <Col xs={24} sm={24} md={24} lg={8} xl={8}>
         <h2 className="name-text">Culture</h2>
         <h2 className="sub-header-text">
           We are proud to have hybrid, work from home and on site work culture

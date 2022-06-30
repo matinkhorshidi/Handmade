@@ -27,7 +27,7 @@ const TextContainer = ({
           </span>
           <span
             onClick={(e) => {
-              window.location = btnLink;
+              window.location = btn2Link;
               e.preventDefault();
             }}
           >
@@ -36,35 +36,6 @@ const TextContainer = ({
         </>
       )}
     </>
-    // <Link to={btnLink}  > <span className='btn   color-Valencia bg-black Boilover btn-Slider-more'>{btnTxt}</span></Link>
-    //    <div className="d-flex ">
-    //      <a
-    //        href={btnTxt}
-    //        target="_blank"
-    //        rel="noopener noreferrer"
-    //        style={{ width: '10vw' }}
-    //      >
-    //        {/*<img src='/img/items/google.png' className='me-3 social-img object-fit-container cursor-pointer w-100'  alt="twitter"/>*/}
-    //        <img
-    //          src="/img/items/google.png"
-    //          className="  cursor-pointer w-100"
-    //          alt="twitter"
-    //        />
-    //      </a>
-    //      <a
-    //        href={btnLink}
-    //        target="_blank"
-    //        rel="noopener noreferrer"
-    //        className="ms-2"
-    //        style={{ width: '10vw' }}
-    //      >
-    //        <img
-    //          src="/img/items/apple.png"
-    //          className="  cursor-pointer w-100  "
-    //          alt="twitter"
-    //        />
-    //      </a>
-    //    </div>
   );
 };
 
