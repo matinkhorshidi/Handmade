@@ -17,22 +17,22 @@ const TextContainer = ({
       <h3 className="sub-header-text">{subHeader}</h3>
       {(id === 1 || id === 3 || id === 4) && (
         <>
-          <span
+          <a
             onClick={(e) => {
               window.location = btnLink;
               e.preventDefault();
             }}
           >
             <span className="btn1">{btnTxt}</span>
-          </span>
-          <span
+          </a>
+          <a
             onClick={(e) => {
               window.location = btn2Link;
               e.preventDefault();
             }}
           >
             <span className="btn2">{btn2Txt}</span>
-          </span>
+          </a>
         </>
       )}
     </>

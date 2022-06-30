@@ -346,27 +346,36 @@ const Slider = (props) => {
           flexDirection: 'column',
         }}
       >
-        <Link to="/#" style={{ marginTop: '0.7rem' }}>
+        <a
+          href="https://twitter.com/handmadellc"
+          style={{ marginTop: '0.7rem' }}
+        >
           <img
             src="/img/items/twitter.png"
             className="me-3 social-img object-fit-container cursor-pointer"
             alt="twitter"
           />
-        </Link>
-        <Link to="/#" style={{ marginTop: '0.7rem' }}>
+        </a>
+        <a
+          href="https://www.instagram.com/thehandmade.io/"
+          style={{ marginTop: '0.7rem' }}
+        >
           <img
             src="/img/items/instagram.png"
             className="me-3 social-img object-fit-container cursor-pointer"
             alt="instagram"
           />
-        </Link>
-        <Link to="/#" style={{ marginTop: '0.7rem' }}>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/handmadeinteractive"
+          style={{ marginTop: '0.7rem' }}
+        >
           <img
             src="/img/items/linkedin.png"
             className="me-3 social-img object-fit-container cursor-pointer"
             alt="linkedin"
           />
-        </Link>
+        </a>
       </div>
       <span
         style={{
