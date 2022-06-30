@@ -1,18 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Col, Row } from 'antd';
-import TextContainer from './TextContainer';
 
-const TeamContainer = ({
-  Teams,
-  Name,
-  Header,
-  subHeader,
-  id,
-  btnTxt,
-  btnLink,
-  btn2Txt,
-  btn2Link,
-}) => {
+const TeamContainer = ({ Teams }) => {
   return (
     <Row style={{ paddingTop: '8rem' }}>
       <Col
@@ -29,7 +18,7 @@ const TeamContainer = ({
         <Row style={{ paddingRight: '5rem' }}>
           {Teams.map((Team) => {
             return (
-              <Col className="gutter-row" span={3}>
+              <Col className="gutter-row" span={3} key={Team.id}>
                 <div
                   style={{
                     padding: '1px 0',
@@ -41,11 +30,8 @@ const TeamContainer = ({
                     alt={Team.name}
                     className="team-img"
                   />
-                  <p style={{ margin: '0px', fontSize: '12px' }}>{Team.name}</p>
-                  <p style={{ margin: '0px', fontWeight: 'bold' }}>
-                    {' '}
-                    {Team.job}
-                  </p>
+                  <p className="team-name">{Team.name}</p>
+                  <p className="team-job"> {Team.job}</p>
                 </div>
               </Col>
             );
