@@ -35,14 +35,19 @@ a {
 }
 .navlink-container {
   display: block;
+  margin-right: 10px;
+  position: absolute;
+  right: 4rem;
+  top: 3rem;
+  z-index: 2;
+  display: flex;
 }
 .navlink {
-  text-transform: uppercase;
   text-decoration: none;
   margin: 0px 20px;
   display: inline-block;
   position: relative;
-  font-size: 30px;
+  font-size: 25px;
   color: #ffff;
 }
 
@@ -51,7 +56,7 @@ a {
   color: #ffff !important;
 }
 .navlink-active::before {
-  height: 5px !important;
+  height: 3px !important;
   content: '' !important;
   position: absolute !important;
   background-color: #ffff !important;
@@ -61,7 +66,7 @@ a {
 }
 .navlink::before {
   transition: 300ms;
-  height: 5px;
+  height: 3px;
   content: '';
   position: absolute;
   background-color: #ffff;
@@ -75,15 +80,27 @@ a {
 .navlink-ltr:hover::before {
   width: 100%;
 }
+
+.logo-container {
+  position: absolute;
+  left: 6rem;
+  top: 2rem;
+  z-index: 2;
+}
 /* .navlink-active {
 } */
 .border-div {
   /* background-color: red; */
   margin-right: 1rem;
 }
-.footer-tex {
-  /* background-color: red; */
+.footer-text {
   margin-right: 1rem;
+  position: absolute;
+  right: 5%;
+  bottom: 4rem;
+  z-index: 2;
+  display: flex;
+  color: #ffff;
 }
 .middle-col {
   display: flex;
@@ -103,7 +120,7 @@ a {
 }
 .text-content {
   margin-top: 10rem;
-  width: 70%;
+  width: 65%;
 }
 .text-content-1 {
   width: 90%;
@@ -113,12 +130,12 @@ a {
 }
 .name-text {
   font-family: GroverBlack !important;
-  font-size: 42px;
+  font-size: 46px;
   color: #ffff;
 }
 .header-text {
-  font-family: groverBlack;
-  font-size: 30px;
+  font-family: Grover;
+  font-size: 28px;
   font-weight: bold;
   color: #ffff;
 }
@@ -131,14 +148,14 @@ a {
 }
 .Team-text {
   font-family: GroverBlack !important;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   color: #ffff;
 }
 .Team-header-text {
-  font-family: groverBlack;
-  font-size: 20px;
-  font-weight: bold;
+  font-family: grover;
+  font-size: 15px;
+  /* font-weight: bold; */
   color: #ffff;
 }
 .team-name {
@@ -154,7 +171,6 @@ a {
 }
 
 .btn1 {
-  /* display: inline-block; */
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -263,6 +279,7 @@ a {
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 15px;
 }
 .culture-img {
   width: 90%;
@@ -312,7 +329,12 @@ a {
   .burger-button {
     display: block;
   }
-
+  .logo-container {
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    z-index: 2;
+  }
   .name-text {
     /* font-size: 60px; */
     font-size: 30px;
@@ -343,7 +365,16 @@ a {
     font-weight: bold;
     color: #ffff;
   }
-
+  .btn1 {
+    font-size: 15px;
+    width: 8rem;
+    height: 40px;
+  }
+  .btn2 {
+    font-size: 15px;
+    width: 8rem;
+    height: 40px;
+  }
   .middle-content {
     /* background-color: red; */
     /* text-align: center; */
@@ -360,14 +391,18 @@ a {
   .text-content-2 {
     margin-top: 20px;
   }
+
   .logo-img {
-    width: 80px;
-    height: 70px;
+    width: 60px;
+    /* height: 40px; */
   }
 
   .image-text-box {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .swiper-pagination-bullet {
+    margin-right: 0.3rem !important;
   }
   /* Old */
   .arrowposition {
@@ -407,7 +442,86 @@ a {
     font-size: 54px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .swiper-pagination-bullet {
+    margin-right: 0.5rem !important;
+  }
+  .navlink-container {
+    top: 2rem;
+  }
+  .btn1 {
+    font-size: 15px;
+    width: 8rem;
+    height: 40px;
+  }
+  .btn2 {
+    font-size: 15px;
+    width: 8rem;
+    height: 40px;
+  }
+  .navlink {
+    text-decoration: none;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #ffff;
+  }
+  .logo-container {
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    z-index: 2;
+  }
+  .text-content-1 {
+    margin-top: 120px;
+  }
+  .text-content-2 {
+    margin-top: 100px;
+  }
+  .image-text-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+  }
 
+  .name-text {
+    /* font-size: 60px; */
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffff;
+  }
+  .header-text {
+    /* font-size: 48px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+  }
+  .sub-header-text {
+    /* font-size: 36px; */
+    font-size: 15px;
+    color: #ffff;
+    margin-bottom: 2rem;
+  }
+  .Team-text {
+    /* font-size: 60px; */
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffff;
+  }
+  .Team-header-text {
+    /* font-size: 48px; */
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffff;
+  }
+
+  .footer-text {
+    right: 5%;
+    bottom: 5%;
+    font-size: 10px;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 780px) {
   .arrowposition {
@@ -421,10 +535,7 @@ a {
   .ml-links {
     margin-left: -2%;
   }
-  .logo-img {
-    width: 50px;
-    height: 40px;
-  }
+
   .social-img {
     width: 20px;
     height: 20px;
@@ -612,4 +723,31 @@ a {
   #Rotation {
     display: none;
   }
+  .text-content {
+    margin-top: 7rem;
+    width: 100%;
+  }
+}
+
+.-webkit-scrollbar {
+  width: 0.4em;
+}
+.-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+.-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid slategrey;
+}
+
+.ant-row .Team-container {
+  /* background-color: red; */
+  margin-right: 5rem;
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: rgba(56, 56, 56, 0.2);
+  height: 20rem;
+  overflow: auto;
+  text-align: justify;
+  scrollbar-width: thin;
 }

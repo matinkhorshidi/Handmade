@@ -204,9 +204,9 @@ const Slider = (props) => {
     {
       bg: '/img/bg/slide2_cover.png',
       Name: 'Our Mission, Making Games',
-      Header: 'The Ultimate Fun in Your Pockets',
+      Header: `Its all about you! all the time...`,
       subHeader:
-        'enjoy our casual and cross platform games for your mobile devices availble on android and IOS',
+        'For more than 10 years weve been dedicated to create unique games in the most creactive way...',
       id: 2,
       btnTxt: 'App Store',
       btnLink:
@@ -216,10 +216,11 @@ const Slider = (props) => {
     },
     {
       bg: '/img/bg/slide3_cover.png',
-      Name: 'Our Mission, Making Games',
-      Header: `its all about you! all the time...`,
+      Name: 'Our Mission',
+      Header: 'The Ultimate Fun in Your Pockets',
+
       subHeader:
-        'For more than 10 years weve been dedicated to create unique games in the most creactive way...',
+        'Enjoy our casual and cross platform games for your mobile devices availble on android and IOS',
       id: 3,
       btnTxt: 'Drop A Message',
       btnLink: 'mailto:info@thehandmade.io',
@@ -256,27 +257,11 @@ const Slider = (props) => {
       <Swiper {...params} ref={swiperRef}>
         {SliderInside.map(EachItem)}
       </Swiper>
-      <span
-        style={{
-          position: 'absolute',
-          left: '6rem',
-          top: '3rem',
-          zIndex: '2',
-        }}
-      >
+      <span className="logo-container">
         <img src="/img/items/logo.png" alt="logo" className="logo-img" />
       </span>
 
-      <div
-        style={{
-          position: 'absolute',
-          right: '4rem',
-          top: '4rem',
-          zIndex: '2',
-          display: 'flex',
-        }}
-        className="navlink-container"
-      >
+      <div className="navlink-container">
         <a
           className={`navlink navlink-ltr ${
             sliderIndex === 1 || sliderIndex === 6 ? 'navlink-active' : ''
@@ -296,7 +281,7 @@ const Slider = (props) => {
           href="/#"
           onClick={() => goToSlide(2)}
         >
-          Our mission
+          Our Mission
         </a>
         <a
           className={`navlink navlink-ltr ${
@@ -308,11 +293,9 @@ const Slider = (props) => {
           Team
         </a>
         <a
-          className={`navlink navlink-ltr ${
-            sliderIndex === 0 ? 'navlink-active' : ''
-          }`}
-          href="/#"
-          onClick={() => goToSlide(0)}
+          className={`navlink navlink-ltr`}
+          href="mailto:info@thehandmade.io"
+          // onClick={() => goToSlide(0)}
         >
           Contact Us
         </a>
@@ -321,8 +304,8 @@ const Slider = (props) => {
         className="burger-button"
         style={{
           position: 'absolute',
-          right: '5rem',
-          top: '4rem',
+          right: '3rem',
+          top: '3rem',
           zIndex: '2',
           display: 'flex',
           overflow: 'hidden',
@@ -332,14 +315,14 @@ const Slider = (props) => {
         <MenuOutlined
           className="burger-button"
           onClick={showDrawer}
-          style={{ fontSize: '40px' }}
+          style={{ fontSize: '30px' }}
         />
       </div>
       <div
         className="  ml-2   "
         style={{
           position: 'absolute',
-          left: '1.5rem',
+          left: '2%',
           bottom: '4rem',
           zIndex: '2',
           display: 'flex',
@@ -377,16 +360,7 @@ const Slider = (props) => {
           />
         </a>
       </div>
-      <span
-        style={{
-          position: 'absolute',
-          right: '4.5rem',
-          bottom: '4rem',
-          zIndex: '2',
-          display: 'flex',
-          color: '#ffff',
-        }}
-      >
+      <span className="footer-text">
         2022 Handmade Interactive LLC, All Right Reserved
       </span>
       <Drawer
@@ -421,7 +395,7 @@ const Slider = (props) => {
           className="navlink-drawer"
         >
           {' '}
-          Our mission
+          Our Mission
         </p>
         <Divider />
         <p
