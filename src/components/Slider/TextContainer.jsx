@@ -18,6 +18,7 @@ const TextContainer = ({
       {(id === 1 || id === 3 || id === 4) && (
         <>
           <a
+            href={btnLink}
             onClick={(e) => {
               window.location = btnLink;
               e.preventDefault();
@@ -26,6 +27,7 @@ const TextContainer = ({
             <span className="btn1">{btnTxt}</span>
           </a>
           <a
+            href={btn2Link}
             onClick={(e) => {
               window.location = btn2Link;
               e.preventDefault();

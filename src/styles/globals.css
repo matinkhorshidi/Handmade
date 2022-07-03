@@ -1,13 +1,8 @@
 @font-face {
   font-family: GroverBlack;
-  /*font-family: sans;*/
   font-style: normal;
   font-weight: normal;
   src: url('./font/Grover-Black.ttf');
-  /*src: url('/assets/fonts/sans/IRANSansWeb.eot?#iefix') format('embedded-opentype'),*/
-  /*url('/assets/fonts/sans/IRANSansWeb.woff2') format('woff2'),*/
-  /*url('/assets/fonts/sans/IRANSansWeb.woff') format('woff'),*/
-  /*url('/assets/fonts/sans/IRANSansWeb.ttf') format('truetype');*/
 }
 @font-face {
   font-family: Grover;
@@ -27,7 +22,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 * {
@@ -87,10 +82,7 @@ a {
   top: 2rem;
   z-index: 2;
 }
-/* .navlink-active {
-} */
 .border-div {
-  /* background-color: red; */
   margin-right: 1rem;
 }
 .footer-text {
@@ -108,19 +100,15 @@ a {
   border-left: 1px solid #ffff;
   color: #ffff;
   margin-bottom: 4rem;
-  /* background-color: red; */
 }
 .middle-content {
-  /* background-color: red; */
-  /* text-align: center; */
   display: inline-flex;
   margin-left: 2rem;
   align-items: center;
-  /* justify-content: center; */
 }
 .text-content {
   margin-top: 10rem;
-  width: 65%;
+  width: 70%;
 }
 .text-content-1 {
   width: 90%;
@@ -145,6 +133,12 @@ a {
   font-size: 20px;
   color: #ffff;
   margin-bottom: 2rem;
+}
+
+.ant-row .Team-container {
+  margin-top: 6rem;
+  padding: 30px;
+  margin: 6rem 2rem 0rem 0rem;
 }
 .Team-text {
   font-family: GroverBlack !important;
@@ -251,14 +245,9 @@ a {
   font-weight: bold !important;
 } */
 .bg-cover {
-  /* background-size: 100% 100%;
-  background-repeat: no-repeat; */
   background-size: cover; /* <------ */
   background-repeat: no-repeat;
   background-position: center center;
-}
-.color-Valencia {
-  color: #d73f2f !important;
 }
 .color-gray {
   color: #8e8e8e;
@@ -266,9 +255,7 @@ a {
 .Grover {
   font-family: Grover;
 }
-.Due {
-  font-family: Grover;
-}
+
 .object-fit-container {
   object-fit: contain;
 }
@@ -281,21 +268,27 @@ a {
   padding-right: 30px;
   font-size: 15px;
 }
+
+.culture-text {
+  margin-top: 1rem;
+}
 .culture-img {
   width: 90%;
-  /* height: auto; */
 }
 .team-img {
   width: 80%;
-  /* height: auto; */
 }
 .partner-img {
-  width: 100px;
-  /* height: auto; */
+  width: 80px;
 }
 .partner-img-lion {
   width: 50px;
-  /* height: auto; */
+}
+
+.ant-row .Team-profiles-container {
+  margin-right: 5rem;
+  height: 20rem;
+  padding: 10px 5px;
 }
 
 .burger-button {
@@ -319,6 +312,14 @@ a {
   color: #ffff;
 }
 
+.socialmedia-container {
+  position: absolute;
+  left: 2%;
+  bottom: 4rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
 /* Resp */
 
 /* Extra small devices (phones, 600px and down) */
@@ -337,7 +338,7 @@ a {
   }
   .name-text {
     /* font-size: 60px; */
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: #ffff;
   }
@@ -376,10 +377,7 @@ a {
     height: 40px;
   }
   .middle-content {
-    /* background-color: red; */
-    /* text-align: center; */
     margin-top: -20px;
-    /* justify-content: center; */
   }
   .text-content {
     margin-top: 10rem;
@@ -394,7 +392,6 @@ a {
 
   .logo-img {
     width: 60px;
-    /* height: 40px; */
   }
 
   .image-text-box {
@@ -405,10 +402,6 @@ a {
     margin-right: 0.3rem !important;
   }
   /* Old */
-  .arrowposition {
-    top: 65%;
-    right: 2%;
-  }
   .btn-Slider-more {
     font-size: 9px !important;
     padding: 7px 20px !important;
@@ -442,7 +435,7 @@ a {
     font-size: 54px;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 990px) {
   .swiper-pagination-bullet {
     margin-right: 0.5rem !important;
   }
@@ -487,25 +480,26 @@ a {
 
   .name-text {
     /* font-size: 60px; */
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: #ffff;
   }
   .header-text {
     /* font-size: 48px; */
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     color: #ffff;
   }
   .sub-header-text {
     /* font-size: 36px; */
-    font-size: 15px;
+    font-size: 13px;
     color: #ffff;
     margin-bottom: 2rem;
   }
+
   .Team-text {
     /* font-size: 60px; */
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     color: #ffff;
   }
@@ -520,6 +514,28 @@ a {
     right: 5%;
     bottom: 5%;
     font-size: 10px;
+  }
+
+  .ant-row .Team-container {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 30rem;
+    text-align: justify;
+    padding: 10px 5px;
+    margin-top: 6rem;
+    margin: 6rem 2rem 0rem 0rem;
+  }
+  .ant-row .Team-container::-webkit-scrollbar {
+    width: 16px;
+  }
+  .ant-row .Team-container::-webkit-scrollbar-track {
+    background-color: rgba(56, 56, 56, 0.2);
+    border-radius: 100px;
+  }
+
+  .ant-row .Team-container::-webkit-scrollbar-thumb {
+    background-color: rgba(60, 0, 255, 0.5);
+    border-radius: 100px;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -573,6 +589,7 @@ a {
     width: 50px;
     height: 40px;
   }
+
   .Fs-14-1-4 {
     font-size: 16px;
   }
@@ -633,24 +650,6 @@ a {
 .w-80 {
   width: 80%;
 }
-
-/*"&#custom-pagination": {*/
-/*".swiper-pagination-bullet": {*/
-/*                             width: "20px",*/
-/*                             height: "20px",*/
-/*                             bg: "rgba(0, 0, 0, 0.2)",*/
-/*                             color: "white",*/
-/*                             fontSize: 2,*/
-/*                             lineHeight: "20px",*/
-/*                             opacity: 1,*/
-/*                             textAlign: "center"*/
-/*                           },*/
-/*".swiper-pagination-bullet-active": {*/
-/*                                    bg: "gray.9",*/
-/*                                    color: "white"*/
-/*                                  }*/
-/*}*/
-
 .rotation90 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -725,29 +724,116 @@ a {
   }
   .text-content {
     margin-top: 7rem;
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
-.-webkit-scrollbar {
-  width: 0.4em;
-}
-.-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
-}
-.-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.1);
-  outline: 1px solid slategrey;
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+  .text-content-1 {
+    margin-top: 6rem;
+  }
+  .text-content-2 {
+    margin-top: -20px;
+  }
+  .ant-row .Team-container {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 25rem;
+    text-align: justify;
+    padding: 10px 5px;
+    margin-top: 6rem;
+    margin: 6rem 2rem 0rem 0rem;
+  }
+
+  .ant-row .Team-profiles-container {
+    height: 100%;
+    margin-right: 5rem;
+    overflow: hidden;
+    background-color: none;
+    text-align: justify;
+    scrollbar-width: thin;
+    padding: 10px 5px;
+  }
 }
 
-.ant-row .Team-container {
-  /* background-color: red; */
-  margin-right: 5rem;
-  overflow: auto;
-  overflow-x: hidden;
-  background-color: rgba(56, 56, 56, 0.2);
-  height: 20rem;
-  overflow: auto;
-  text-align: justify;
-  scrollbar-width: thin;
+@media (max-height: 500px) {
+  .navlink {
+    font-size: 18px;
+    color: #ffff;
+  }
+  .socialmedia-container {
+    left: 1%;
+    bottom: 4rem;
+  }
+  .name-text {
+    /* font-size: 60px; */
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffff;
+  }
+  .header-text {
+    /* font-size: 48px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+  }
+  .sub-header-text {
+    /* font-size: 36px; */
+    font-size: 15px;
+    color: #ffff;
+    margin-bottom: 2rem;
+  }
+  .Team-text {
+    /* font-size: 60px; */
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffff;
+  }
+  .Team-header-text {
+    /* font-size: 48px; */
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffff;
+  }
+  .btn1 {
+    font-size: 15px;
+    width: 8rem;
+    height: 40px;
+  }
+  .btn2 {
+    font-size: 15px;
+    width: 8rem;
+    height: 40px;
+  }
+  .text-content-1 {
+    margin-top: 7rem;
+  }
+  .text-content-2 {
+    margin-top: 7rem;
+  }
+  .image-text-box {
+    width: 100%;
+    padding: 0;
+  }
+  .love-img {
+    width: 80px;
+  }
+  .ant-row .Team-container {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 17rem;
+    text-align: justify;
+    padding: 10px 5px;
+    margin-top: 6rem;
+    margin: 6rem 2rem 0rem 0rem;
+  }
+  .ant-row .Team-profiles-container {
+    height: 100%;
+    margin-right: 5rem;
+    overflow: hidden;
+    background-color: none;
+    text-align: justify;
+    scrollbar-width: thin;
+    padding: 10px 5px;
+  }
 }

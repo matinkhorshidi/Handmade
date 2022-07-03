@@ -3,26 +3,21 @@ import { Col, Row } from 'antd';
 
 const TeamContainer = ({ Teams }) => {
   return (
-    <Row
-      style={{
-        marginTop: '4rem',
-        margin: '4rem 2rem 0rem 0rem',
-
-        // backgroundColor: 'rgba(56, 56, 56 ,0.2)',
-        // height: '80%',
-        // overflow: 'auto',
-        // textAlign: 'justify',
-        padding: '20px',
-      }}
-    >
+    <Row className="Team-container">
       <Col xs={24} sm={24} md={24} lg={16} xl={16}>
         <h2 className="Team-text">Team</h2>
         <h2 className="Team-header-text">We are the Handmade Interactive</h2>
         {/* Team */}
-        <Row style={{}} className="Team-container">
+        <Row className="Team-profiles-container">
           {Teams.map((Team) => {
             return (
-              <Col className="gutter-row" key={Team.id}>
+              <Col
+                key={Team.id}
+                xs={{ span: 4 }}
+                sm={{ span: 4 }}
+                md={{ span: 3 }}
+                lg={{ span: 3 }}
+              >
                 <div
                   style={{
                     padding: '1px 0',
@@ -43,7 +38,7 @@ const TeamContainer = ({ Teams }) => {
         </Row>
       </Col>
       <Col xs={24} sm={24} md={24} lg={8} xl={8}>
-        <h2 className="Team-text">Culture</h2>
+        <h2 className="Team-text culture-text">Culture</h2>
         <h2 className="Team-header-text">
           We are proud to have hybrid, work from home and on site work culture
           since 2018
@@ -92,7 +87,7 @@ const TeamContainer = ({ Teams }) => {
         <Row>
           {/* Partners*/}
           <h2 className="Team-text">Partners</h2>
-          <Row gutter={[24, 24]}>
+          <Row gutter={[16, 16]}>
             <Col className="gutter-row" span={6}>
               <div
                 style={{
@@ -106,7 +101,7 @@ const TeamContainer = ({ Teams }) => {
                 />
               </div>
             </Col>
-            <Col className="gutter-row" span={68}>
+            <Col className="gutter-row" span={6}>
               <div
                 style={{
                   padding: '4px 0',
@@ -119,7 +114,7 @@ const TeamContainer = ({ Teams }) => {
                 />
               </div>
             </Col>
-            <Col className="gutter-row" span={5}>
+            <Col className="gutter-row" span={6}>
               <div
                 style={{
                   padding: '4px 0',
@@ -132,7 +127,7 @@ const TeamContainer = ({ Teams }) => {
                 />
               </div>
             </Col>
-            <Col className="gutter-row" span={2}>
+            <Col className="gutter-row" span={6}>
               <div
                 style={{
                   padding: '1px 0',
@@ -149,7 +144,7 @@ const TeamContainer = ({ Teams }) => {
               <div
                 style={{
                   padding: '8px 0',
-                  marginTop: '-30px',
+                  // marginTop: '-30px',
                 }}
               >
                 <img src="/img/YSO.png" alt="partner" className="partner-img" />
@@ -159,7 +154,7 @@ const TeamContainer = ({ Teams }) => {
               <div
                 style={{
                   padding: '4px 0',
-                  marginTop: '-35px',
+                  marginTop: '-30px',
                 }}
               >
                 <img
@@ -169,11 +164,11 @@ const TeamContainer = ({ Teams }) => {
                 />
               </div>
             </Col>
-            <Col className="gutter-row" span={2}>
+            <Col className="gutter-row" span={3}>
               <div
                 style={{
                   padding: '8px 0',
-                  marginTop: '-35px',
+                  marginTop: '-15px',
                 }}
               >
                 <img

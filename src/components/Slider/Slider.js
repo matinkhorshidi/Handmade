@@ -1,7 +1,6 @@
 import { Col, Divider, Drawer, Row } from 'antd';
 import React, { useRef, useState } from 'react';
 import Swiper from 'react-id-swiper';
-import { Link } from 'react-router-dom';
 import TeamContainer from './TeamContainer';
 import TextContainer from './TextContainer';
 import TwoColCountainer from './TwoColContainer';
@@ -186,6 +185,10 @@ const Slider = (props) => {
     on: {
       slideChange: onSlideChange,
     },
+    // autoplay: {
+    //   delay: 5000,
+    //   disableOnInteraction: false,
+    // },
   };
 
   const SliderInside = [
@@ -318,17 +321,7 @@ const Slider = (props) => {
           style={{ fontSize: '30px' }}
         />
       </div>
-      <div
-        className="  ml-2   "
-        style={{
-          position: 'absolute',
-          left: '2%',
-          bottom: '4rem',
-          zIndex: '2',
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
+      <div className="ml-2 socialmedia-container">
         <a
           href="https://twitter.com/handmadellc"
           style={{ marginTop: '0.7rem' }}
@@ -360,9 +353,14 @@ const Slider = (props) => {
           />
         </a>
       </div>
-      <span className="footer-text">
-        2022 Handmade Interactive LLC, All Right Reserved
-      </span>
+      {sliderIndex !== 5 ? (
+        <span className="footer-text">
+          2022 Handmade Interactive LLC, All Right Reserved
+        </span>
+      ) : (
+        <></>
+      )}
+
       <Drawer
         title="HandMade"
         placement="right"
