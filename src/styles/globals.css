@@ -598,7 +598,9 @@ a {
 #Rotation {
   display: none;
 }
-/* @media only screen and (orientation: portrait) {
+
+/* Rotation */
+@media only screen and (orientation: portrait) {
   #main {
     display: none;
   }
@@ -610,4 +612,4 @@ a {
   #Rotation {
     display: none;
   }
-} */
+}
