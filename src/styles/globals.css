@@ -88,6 +88,7 @@ a {
 .footer-text {
   margin-right: 1rem;
   position: absolute;
+  display: block;
   right: 5%;
   bottom: 4rem;
   z-index: 2;
@@ -147,7 +148,7 @@ a {
   color: #ffff;
 }
 .Team-header-text {
-  font-family: grover;
+  font-family: GroverBlack;
   font-size: 15px;
   /* font-weight: bold; */
   color: #ffff;
@@ -177,6 +178,10 @@ a {
   margin: 1rem 1rem 1rem 0;
   width: 10rem;
   height: 50px;
+  transition: all 0.3s;
+}
+.btn1:hover {
+  background-color: #00a3cc;
 }
 .btn2 {
   cursor: pointer;
@@ -191,6 +196,10 @@ a {
   margin: 1rem 1rem 1rem 0;
   width: 10rem;
   height: 50px;
+  transition: all 0.3s;
+}
+.btn2:hover {
+  background-color: #838383;
 }
 .swiper-container {
   width: 100%;
@@ -276,7 +285,7 @@ a {
   width: 90%;
 }
 .team-img {
-  width: 80%;
+  width: 100%;
 }
 .partner-img {
   width: 80px;
@@ -835,5 +844,9 @@ a {
     text-align: justify;
     scrollbar-width: thin;
     padding: 10px 5px;
+  }
+
+  .footer-text {
+    display: none;
   }
 }

@@ -50,7 +50,7 @@ const TwoColCountainer = ({
                   alt="logo"
                   className="love-img"
                 />
-                <p style={{}}>Well Make Them Mind Blowing</p>
+                <p>We'll Make Them Mind Blowing</p>
               </div>
             </Col>
           </Row>

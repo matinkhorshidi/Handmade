@@ -113,7 +113,7 @@ const EachItem = (props) => {
       <Col xs={22} sm={22} md={22} lg={22} xl={22} className="middle-col">
         <div className="middle-content">
           {/* Slides 1 3 4 */}
-          {(id === 1 || id === 3 || id === 4) && (
+          {(id === 1 || id === 2 || id === 3 || id === 4) && (
             <div className="text-content">
               <TextContainer
                 Name={Name}
@@ -128,7 +128,7 @@ const EachItem = (props) => {
             </div>
           )}
           {/* Slide 2 */}
-          {id === 2 && (
+          {id === 5 && (
             <TwoColCountainer
               Name={Name}
               Header={Header}
@@ -141,7 +141,7 @@ const EachItem = (props) => {
             />
           )}
           {/* Slide 5 */}
-          {id === 5 && <TeamContainer Teams={Team} />}
+          {id === 6 && <TeamContainer Teams={Team} />}
         </div>
       </Col>
       <Col xs={1} sm={1} md={1} lg={1} xl={1}></Col>
@@ -199,18 +199,55 @@ const Slider = (props) => {
       subHeader:
         'Enter the ultimate battle to win the grand prize of a ticket to heaven',
       id: 1,
-      btnTxt: 'Availble 2024',
+      btnTxt: 'Available 2024',
       btnLink: 'http://tickettoheaven.thehandmade.io/',
       btn2Txt: 'Learn More',
       btn2Link: 'http://tickettoheaven.thehandmade.io/',
     },
     {
       bg: '/img/bg/slide2_cover.png',
+      Name: 'The Last Scent Of Love',
+      Header: 'The Story Of Love And Liberation',
+      subHeader:
+        'A classic retro experience with the handmade art style in 80s timeline',
+      id: 2,
+      btnTxt: 'Comming Soon...',
+      btnLink: '',
+      btn2Txt: 'Learn More',
+      btn2Link: 'http://tickettoheaven.thehandmade.io/',
+    },
+    {
+      bg: '/img/bg/slide3_cover.png',
+      Name: 'Upcoming Harror Story',
+      Header: "There's a new fear in the universe",
+      subHeader:
+        'Enter the journey to the heart of the universe as the bounty hunter who discovers stynning mysteries',
+      id: 3,
+      btnTxt: 'TBA',
+      btnLink: 'mailto:info@thehandmade.io',
+      btn2Txt: 'Learn More',
+      btn2Link: 'http://tickettoheaven.thehandmade.io/',
+    },
+    {
+      bg: '/img/bg/slide4_cover.png',
+      Name: 'Mobile Games',
+      Header: 'The Ultimate Fun in Your Pockets',
+
+      subHeader:
+        'Enjoy our casual and cross platform games for your mobile devices Available on android and IOS',
+      id: 4,
+      btnTxt: 'Drop A Message',
+      btnLink: 'mailto:info@thehandmade.io',
+      btn2Txt: 'Learn More',
+      btn2Link: 'http://tickettoheaven.thehandmade.io/',
+    },
+    {
+      bg: '/img/bg/slide5_cover.png',
       Name: 'Our Mission, Making Games',
       Header: `Its all about you! all the time...`,
       subHeader:
         'For more than 10 years weve been dedicated to create unique games in the most creactive way...',
-      id: 2,
+      id: 5,
       btnTxt: 'App Store',
       btnLink:
         'https://apps.apple.com/us/developer/shima-ghafouri/id1534210976',
@@ -218,36 +255,11 @@ const Slider = (props) => {
       btn2Link: 'http://tickettoheaven.thehandmade.io/',
     },
     {
-      bg: '/img/bg/slide3_cover.png',
-      Name: 'Our Mission',
-      Header: 'The Ultimate Fun in Your Pockets',
-
-      subHeader:
-        'Enjoy our casual and cross platform games for your mobile devices availble on android and IOS',
-      id: 3,
-      btnTxt: 'Drop A Message',
-      btnLink: 'mailto:info@thehandmade.io',
-      btn2Txt: 'Learn More',
-      btn2Link: 'http://tickettoheaven.thehandmade.io/',
-    },
-    {
-      bg: '/img/bg/slide4_cover.png',
-      Name: 'Upcoming Harror Story',
-      Header: 'thers a new fear in the universe',
-      subHeader:
-        'Enter the journey to the heart of the universe as the bounty hunter who discovers stynning mysteries',
-      id: 4,
-      btnTxt: 'TBA',
-      btnLink: 'mailto:info@thehandmade.io',
-      btn2Txt: 'Learn More',
-      btn2Link: 'http://tickettoheaven.thehandmade.io/',
-    },
-    {
-      bg: '/img/bg/slide5_cover.png',
+      bg: '/img/bg/slide6_cover.png',
       Name: 'GET IN TOUCH',
       Header: 'INTERESTED IN WORKING WITH US',
       subHeader: 'SEND US A MESSAGE ABOUT YOUR BUSINESS',
-      id: 5,
+      id: 6,
       btnTxt: 'Drop A Message',
       btnLink: 'mailto:info@thehandmade.io',
       btn2Txt: 'Learn More',
@@ -263,11 +275,17 @@ const Slider = (props) => {
       <span className="logo-container">
         <img src="/img/items/logo.png" alt="logo" className="logo-img" />
       </span>
-
+      {console.log(sliderIndex)}
       <div className="navlink-container">
         <a
           className={`navlink navlink-ltr ${
-            sliderIndex === 1 || sliderIndex === 6 ? 'navlink-active' : ''
+            sliderIndex === 1 ||
+            sliderIndex === 2 ||
+            sliderIndex === 3 ||
+            sliderIndex === 4 ||
+            sliderIndex === 7
+              ? 'navlink-active'
+              : ''
           }`}
           href="/#"
           onClick={() => goToSlide(1)}
@@ -277,27 +295,27 @@ const Slider = (props) => {
 
         <a
           className={`navlink navlink-ltr ${
-            sliderIndex === 2 || sliderIndex === 3 || sliderIndex === 4
-              ? 'navlink-active'
-              : ''
+            sliderIndex === 5 ? 'navlink-active' : ''
           }`}
           href="/#"
-          onClick={() => goToSlide(2)}
+          onClick={() => goToSlide(5)}
         >
           Our Mission
         </a>
         <a
           className={`navlink navlink-ltr ${
-            sliderIndex === 0 || sliderIndex === 5 ? 'navlink-active' : ''
+            sliderIndex === 6 || sliderIndex === 0 ? 'navlink-active' : ''
           }`}
           href="/#"
-          onClick={() => goToSlide(0)}
+          onClick={() => goToSlide(6)}
         >
           Team
         </a>
         <a
           className={`navlink navlink-ltr`}
           href="mailto:info@thehandmade.io"
+          target="_blank"
+          rel="noreferrer noopener"
           // onClick={() => goToSlide(0)}
         >
           Contact Us
@@ -353,13 +371,9 @@ const Slider = (props) => {
           />
         </a>
       </div>
-      {sliderIndex !== 5 ? (
-        <span className="footer-text">
-          2022 Handmade Interactive LLC, All Right Reserved
-        </span>
-      ) : (
-        <></>
-      )}
+      <span className="footer-text">
+        2022 Handmade Interactive LLC, All Right Reserved
+      </span>
 
       <Drawer
         title="HandMade"

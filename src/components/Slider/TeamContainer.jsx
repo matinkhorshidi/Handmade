@@ -20,7 +20,7 @@ const TeamContainer = ({ Teams }) => {
               >
                 <div
                   style={{
-                    padding: '1px 0',
+                    margin: '0px 5px',
                     textAlign: 'center',
                   }}
                 >
