@@ -69,7 +69,7 @@ const EachItem = (props) => {
       id: 10,
       profile: '/img/tarokh_team.png',
       name: 'Tarokh Tarhandeh',
-      job: 'PR Epert',
+      job: 'PR Expert',
     },
     {
       id: 11,

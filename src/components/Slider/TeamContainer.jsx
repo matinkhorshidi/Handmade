@@ -89,11 +89,7 @@ const TeamContainer = ({ Teams }) => {
           <h2 className="Team-text">Partners</h2>
           <Row gutter={[16, 16]}>
             <Col className="gutter-row" span={6}>
-              <div
-                style={{
-                  padding: 'auto 0',
-                }}
-              >
+              <div className="partner-img-container">
                 <img
                   src="/img/kwalee_partner.png"
                   alt="partner"
@@ -106,6 +102,7 @@ const TeamContainer = ({ Teams }) => {
                 style={{
                   padding: '4px 0',
                 }}
+                className="partner-img-container"
               >
                 <img
                   src="/img/voodoo_partner.png"
@@ -117,8 +114,9 @@ const TeamContainer = ({ Teams }) => {
             <Col className="gutter-row" span={6}>
               <div
                 style={{
-                  padding: '4px 0',
+                  padding: '5px 0',
                 }}
+                className="partner-img-container"
               >
                 <img
                   src="/img/applovin_partners.png"
@@ -130,8 +128,9 @@ const TeamContainer = ({ Teams }) => {
             <Col className="gutter-row" span={6}>
               <div
                 style={{
-                  padding: '1px 0',
+                  padding: '-10px 0',
                 }}
+                className="partner-img-container"
               >
                 <img
                   src="/img/jopio_partner.png"
@@ -146,16 +145,18 @@ const TeamContainer = ({ Teams }) => {
                   padding: '8px 0',
                   // marginTop: '-30px',
                 }}
+                className="partner-img-container"
               >
                 <img src="/img/YSO.png" alt="partner" className="partner-img" />
               </div>
             </Col>
-            <Col className="gutter-row" span={3}>
+            <Col className="gutter-row" span={6}>
               <div
                 style={{
                   padding: '4px 0',
-                  marginTop: '-30px',
+                  marginTop: '-20px',
                 }}
+                className="partner-img-container"
               >
                 <img
                   src="/img/lion_partners copy 2.png"
@@ -164,12 +165,13 @@ const TeamContainer = ({ Teams }) => {
                 />
               </div>
             </Col>
-            <Col className="gutter-row" span={3}>
+            <Col className="gutter-row" span={6}>
               <div
                 style={{
                   padding: '8px 0',
                   marginTop: '-15px',
                 }}
+                className="partner-img-container"
               >
                 <img
                   src="/img/martian_partnert.png"
